@@ -1,5 +1,8 @@
+require('dotenv').config();
+
 const app = require('./src/app');
 const { port } = require('./src/config/env');
+
 const { initializeWhatsApp } = require('./src/services/whatsappClient');
 
 async function bootstrap() {
